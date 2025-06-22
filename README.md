@@ -17,6 +17,6 @@ Trust & Safety teams face alert overload, inconsistent insights, and slow decisi
 1) Event Ingestion Pipeline: Real-time intake of marketplace events (e.g., listings, reviews, returns) using Kafka.
 2) Super Agent Routing: Uses Model Context Protocol (MCP) to distribute event data to specialized sub-agents.
 3) Sub-Agent Processing: Dedicated agents analyze fraud, counterfeit, review-spam, and return patterns.
-4) LLM-Powered Briefs: GPT-generated summaries for analysts with key risk metrics and context.
+4) LLM-Powered Briefs: Gemma-generated summaries for analysts with key risk metrics and context.
 5) React Dashboard: UI to triage alerts, drill into MCP context, and take actions like "Confirm Fraud" or "Escalate".
 6) Feedback Loop: Nightly retraining using analyst labels to improve model accuracy and reduce false positives.
