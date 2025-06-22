@@ -1,19 +1,19 @@
-Trust & Safety Command Center (TSCC)
+#Trust & Safety Command Center (TSCC)
 
-Overview
+##Overview
 The Trust & Safety Command Center (TSCC) is an AI-powered platform designed to enhance marketplace trust by enabling real-time fraud detection, counterfeit screening, review authenticity verification, and return anomaly monitoring. Built for internal Trust & Safety analysts at Amazon, TSCC leverages large language models (LLMs), modular microservices, and streaming data pipelines to provide explainable, high-accuracy alerts with minimal noise.
 
-Team
-~TechTitans~
+##Team
+~ TechTitans ~
 
 -Jenifer Shanmugasundaram
 -Dileesha A
 -Akshita Gupta
 
-Problem Statement
+##Problem Statement
 Trust & Safety teams face alert overload, inconsistent insights, and slow decision cycles when handling marketplace risks. TSCC addresses these challenges by providing an intelligent, real-time platform that aggregates agent outputs, applies dynamic rules, and generates LLM-powered investigation briefs to surface only high-priority cases.
 
-Features
+##Features
 1) Event Ingestion Pipeline: Real-time intake of marketplace events (e.g., listings, reviews, returns) using Kafka.
 2) Super Agent Routing: Uses Model Context Protocol (MCP) to distribute event data to specialized sub-agents.
 3) Sub-Agent Processing: Dedicated agents analyze fraud, counterfeit, review-spam, and return patterns.
