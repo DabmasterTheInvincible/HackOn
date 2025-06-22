@@ -1,0 +1,26 @@
+name: Deploy to Windows Machine
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Deploy via SSH
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.WIN_HOST }}
+        username: ${{ secrets.WIN_USER }}
+        key: ${{ secrets.WIN_SSH_KEY }}
+        port: 22
+        script: |
+          cd C:\Users\${{ secrets.WIN_USER }}\my-app
+          git pull origin main
+          powershell.exe -ExecutionPolicy Bypass -File start.ps1
