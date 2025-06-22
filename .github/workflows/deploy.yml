@@ -21,6 +21,6 @@ jobs:
         key: ${{ secrets.WIN_SSH_KEY }}
         port: 22
         script: |
-          cd C:\Users\${{ secrets.WIN_USER }}\my-app
+          cd C:\Users\${{ secrets.WIN_USER }}\HackOn
           git pull origin main
           powershell.exe -ExecutionPolicy Bypass -File start.ps1
